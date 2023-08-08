@@ -1,0 +1,73 @@
+{
+  "0fcc2b62-dcb2-49bb-976f-96838a118445": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office\u00A0365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/partial-builds/390724148/1.0.1641.3327/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "0fcc2b62-dcb2-49bb-976f-96838a118445"
+  },
+  "cf50b226-f78a-4629-9a53-66727ad316a7": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://simedcorp.sharepoint.com/sites/PROYECTOS_PREUBAS_JCT": {
+        "dataSources": {
+          "BD_ACTIVO_FIJO_JUNIO_2023": {
+            "tableName": "1661c005-666b-4f38-b02f-e5b40856cf0c"
+          },
+          "BD_CLIENTES_OPERACIONES": {
+            "tableName": "84706c0d-cafc-45bc-89c6-ae5afa316db2"
+          },
+          "BD_EQUIPOS SIMED_2022": {
+            "tableName": "4ebcf823-f044-4ba6-a342-eb17480fe4cf"
+          },
+          "BD_REPUESTOS_TOMADOS_ACTIVO_FIJO": {
+            "tableName": "5fdbc5c3-a827-4cdc-8165-c64ac83e09b7"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "BD_REPUESTOS_TOMADOS_ACTIVO_FIJO",
+      "BD_EQUIPOS SIMED_2022",
+      "BD_CLIENTES_OPERACIONES",
+      "BD_ACTIVO_FIJO_JUNIO_2023"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "cf50b226-f78a-4629-9a53-66727ad316a7"
+  },
+  "ea7b1f19-cb9d-4d38-8ff5-b2c790299cab": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Usuarios de Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1644/1.0.1644.3342/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "ea7b1f19-cb9d-4d38-8ff5-b2c790299cab"
+  }
+}
