@@ -1,0 +1,15 @@
+App As appinfo:
+    BackEnabled: =true
+    OnStart: |-
+        =Set(bt1,Icon.CalendarBlank);Set(bt3,Icon.Trash);Set(bt2,Icon.Manufacture);Set(bt4,Icon.Tools);Set(bt5,Icon.Person);Set(bt6,Icon.Airplane);
+        ClearCollect(botones, {title:"Cronograma de Mantenimientos",Icon:bt1,Navegar:Menu_Inicio},{title:"Instalación",Icon:bt2,Navegar:Menu_Inicio},{title:"Desinstalación",Icon:bt3,Navegar:Menu_Inicio},{title:"Repuesto de Activo Fijo ",Icon:bt4,Navegar:Formulario_Control_Repuestos_AF},{title:"Mi Perfil",Icon:bt5,Navegar:Menu_Inicio},{title:"Importación para Devolución en Activo",Icon:bt6,Navegar:Registro_Importación_AF});
+        ClearCollect(Clientes_AF,Distinct(BD_CLIENTES_OPERACIONES,'NOMBRE DE CLIENTE'))
+    StartScreen: =
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
